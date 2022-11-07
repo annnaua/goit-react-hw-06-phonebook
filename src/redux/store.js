@@ -26,6 +26,7 @@ import { contactsReducer, filtersReducer } from './phonebookSlice';
 const persistConfig = {
   key: 'contacts',
   storage,
+  blacklist: ['filters'],
 };
 
 const rootReducer = combineReducers({
